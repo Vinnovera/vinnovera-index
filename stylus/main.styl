@@ -1,0 +1,812 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ 
+
+To be Stylusififed...
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+h1,h2,h3,h4,h5{
+    text-transform: uppercase;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #222;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #000;
+}
+
+.main aside {
+    border-top: 20px solid #000;
+}
+
+.header-container,
+.main aside {
+    background: #F7931E;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a,
+a:hover,
+a:visited{
+    color: #000;
+}
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+.main article{
+    border: 1px solid #f2f2f2;
+    background-image: url('../img/logoSymbolBlack.png');
+    background-repeat: no-repeat;
+    background-position: 50% 8%;
+    padding-top: 100px;
+    background-color: #f8f8f8;
+}
+.main article h1 {
+    font-size: 2em;
+}
+.main article section {
+    padding: 2% 4% 20px;
+    background: #fff;
+}
+
+.main article section ul{
+    list-style-type: square;
+    font-size: 1.4em;
+}
+
+.main article section ul li{
+    color: #F7931E;
+}
+
+.main article section ul li a{
+    color: #F7931E;
+    text-decoration: none;
+}
+
+.main article section ul li a:hover{
+    text-decoration: underline;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container{
+    position: absolute;
+    bottom:0;
+    opacity: 0.5;
+    width: 100%;
+    background: #F2F2F2;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+}
+.footer-container:hover{
+    bottom:5px;
+    opacity: 1;
+}
+.footer-container footer {
+    color: #222;
+    padding: 20px 0;
+
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.remodal-overlay{
+    background: white;
+    background: rgba(120, 120, 120, 0.5);
+}
+
+.remodal{
+    border-radius: none!important;
+    -webkit-border-radius: none!important;
+    background: #fff;
+    max-width: 800px!important;
+    padding: 40px 0px;
+    text-align: left;
+        -webkit-box-shadow: 6px 6px 0px #f2f2f2;
+           -moz-box-shadow: 6px 6px 0px #f2f2f2;
+                box-shadow: 6px 6px 0px #f2f2f2;
+}
+
+.remodal-close:hover, .remodal-close:active {
+    background: black;
+}
+.remodal-close {
+    border-color: white;
+    left: auto;
+    right:5px;
+    text-align: center;
+}
+
+.remodal-close:after {
+    color: black;
+}
+
+.remodal-confirm {
+    border: none;
+    background: #000;
+    color: #fff!important;
+    -webkit-border-radius:3px;
+    border-radius: 3px;
+            -webkit-box-shadow: 6px 6px 0px #f2f2f2;
+           -moz-box-shadow: 6px 6px 0px #f2f2f2;
+                box-shadow: 6px 6px 0px #f2f2f2;
+    margin: 0 auto;
+    display: block;
+}
+
+.remodal-confirm:hover {
+    background: #333;
+}
+/*
+Tables
+---------------------------------------------------------------------------------------------------- */
+ 
+table {
+    max-width: 100%;
+    width: 100%;
+    font-size: 80%;
+}
+ 
+th {
+    text-align: left;
+}
+ 
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+ 
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+table > tbody > tr > td:first-child{
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+    max-width: 170px;
+}
+ 
+table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+ 
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+ 
+table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+ 
+table table {
+    background-color: #fff;
+}
+
+table img {
+   display: none;
+}
+
+table h1,h2 {
+    text-align: center;
+}
+ 
+ 
+table > tbody > tr:nth-child(odd) > td,
+table > tbody > tr:nth-child(odd) > th {
+    background-color: #eaeaea;
+}
+ 
+table > tbody > tr:hover > td,
+table > tbody > tr:hover > th {
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside,
+    .main article{
+        -webkit-box-shadow: 6px 6px 0px #f2f2f2;
+           -moz-box-shadow: 6px 6px 0px #f2f2f2;
+                box-shadow: 6px 6px 0px #f2f2f2;
+        opacity: 0.85;
+        left: 0;
+        top:0;
+        position:relative;
+    }
+    .header-container,
+    .main aside,
+    .main article,
+    .footer-container,
+    .csstransitions body,
+    .csstransitions aside{
+        -webkit-transition: .35s all ease-in-out;
+           -moz-transition: .35s all ease-in-out;
+                transition: .35s all ease-in-out;
+    }
+
+    .csstransitions aside.hide{
+        position: relative;
+        opacity: 0;
+        left: 130px;
+        top: -60px;
+        transform:rotate(-6deg);
+    }
+    .csstransitions aside.show{
+        opacity: 1;
+        left:0;
+        top:0;
+        transform:rotate(0deg);
+    }
+    .header-container:hover,
+    .main aside:hover,
+    .main article:hover,
+    .main article.active,
+    .main aside.active
+    {
+        opacity: 1;
+        top:4px;
+    }
+
+    .csstransitions .footer-container{
+        height: 0;
+        overflow: hidden;
+    }
+
+    .csstransitions body{
+        opacity: 0;
+    }
+
+    .csstransitions body.active{
+        opacity: 1;
+    }
+
+    .csstransitions .footer-container.up{
+        min-height: 100px;
+    }
+
+
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 70%;
+    }
+
+    .main aside {
+        float: right;
+        width: 16%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* Shrimp */
+.shrimpContainer {
+    width: 100%;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    bottom:100px;
+    display: none;
+}
+
+.shrimpBox {
+    position:absolute;
+    top:0;
+    left:-20%;
+    -webkit-animation: shrimpMove 16s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function:linear;
+}
+
+
+.shrimp {
+    position:absolute;
+    top:0px;
+    left:0px;
+    -webkit-animation: shrimpBounce 0.35s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay:0.75s;
+}
+
+.shrimp div {
+    border-color:#f95e5e;
+    position:absolute;
+}
+
+.shrimp div:nth-of-type(1){
+    top:10px;
+    left:1px;
+    width:19px;
+    height:0px;
+    border-style:solid;
+    border-width:2px 0 0 0;
+}
+
+.shrimp div:nth-of-type(2){
+    top:16px;
+    left:11px;
+    width:30px;
+    height:0px;
+    border-style:solid;
+    border-width:2px 0 0 0;
+}
+
+.shrimp div:nth-of-type(3){
+    top:5px;
+    left:23px;
+    border-color:#000000;
+    border-radius:2px 2px 0 0;
+    border-width:2px;
+    border-style:solid;
+    height:2px;
+    width:0;
+
+}
+
+.shrimp div:nth-of-type(4){
+    top:5px;
+    left:29px;
+    border-color:#000000;
+    border-radius:2px 2px 0 0;
+    border-width:2px;
+    border-style:solid;
+    height:2px;
+    width:0;
+}
+
+.shrimp div:nth-of-type(5){
+    top:10px;
+    left:37px;
+    width:30px;
+    height:0px;
+    border-style:solid;
+    border-width:2px 0 0 0;
+}
+
+.shrimp div:nth-of-type(6){
+    top:10px;
+    left:58px;
+    border-radius:50%;
+    width:13px;
+    height:13px;
+    border-color: #f95e5e #f95e5e transparent transparent;
+    border-style:solid;
+    border-width:2px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.shrimp div:nth-of-type(7){
+    top:15px;
+    left:41px;
+    border-radius:50%;
+    width:4px;
+    height:8px;
+    border-color: #f95e5e #f95e5e transparent transparent;
+    border-style:solid;
+    border-width:2px;
+    -webkit-transform: rotate(45deg);
+    -webkit-animation: shrimpSwim 0.35s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+.shrimp div:nth-of-type(8){
+    top:15px;
+    left:48px;
+    border-radius:50%;
+    width:4px;
+    height:8px;
+    border-color: #f95e5e #f95e5e transparent transparent;
+    border-style:solid;
+    border-width:2px;
+    -webkit-transform: rotate(45deg);
+    -webkit-animation: shrimpSwim 0.35s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+.shrimp div:nth-of-type(9){
+    top:15px;
+    left:55px;
+    border-radius:50%;
+    width:4px;
+    height:8px;
+    border-color: #f95e5e #f95e5e transparent transparent;
+    border-style:solid;
+    border-width:2px;
+    -webkit-transform: rotate(45deg);
+    -webkit-animation: shrimpSwim 0.35s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+
+}
+
+@-webkit-keyframes shrimpSwim {
+    from {
+        width:2px;
+        height:9px;
+        border-radius:0;
+        -webkit-transform: rotate(5deg);
+        border-color: transparent #f95e5e transparent transparent;
+    }
+    to {
+        width:4px;
+        height:8px;
+        border-radius:50%;
+        -webkit-transform: rotate(45deg);
+        border-color: #f95e5e #f95e5e transparent transparent;
+    }
+}
+
+@-webkit-keyframes shrimpBounce {
+    from {
+        margin-left:0px;
+    }
+    to {
+        margin-left:20px;
+    }
+}
+
+
+@-webkit-keyframes shrimpMove {
+    from {
+        left:-20%;
+    }
+    to {
+        left:120%;
+    }
+}
