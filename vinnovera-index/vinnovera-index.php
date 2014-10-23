@@ -64,7 +64,7 @@
                         foreach ($dirlist as $dir => $value) {
                            $name = $value[name];
                            $name = substr($name,2,-1);
-                           if ($name !== 'index') {
+                           if ($name !== 'vinnovera-index') {
                               echo '<li><a href="/'.$name.'">/'.$name.'/</a></li>';
                            }
                         }

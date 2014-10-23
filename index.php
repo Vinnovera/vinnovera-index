@@ -6,5 +6,5 @@
   $db_pass = 'banana80';
   $db_host = '127.0.0.1';
 
-  require_once('vinnovera-index/index.php');
+  require_once('vinnovera-index/vinnovera-index.php');
   ?>
