@@ -134,7 +134,7 @@
             </footer>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="index/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="vinnovera-index/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="vinnovera-index/js/vendor/jquery.remodal.js"></script>
 
         <script src="vinnovera-index/js/main.js"></script>
